@@ -10,7 +10,7 @@ void main()
     printf("Naziv ulaznog cvora: ");
     gets(ime_cvora);
     char taster;
-    char temp[10];
+    char temp[11];
     FILE *dat;
     strcpy(temp,ime_cvora); strcat(temp,".txt");
     if (dat = fopen(temp, "a"))
@@ -26,7 +26,7 @@ void main()
     do
     {
         system("cls");
-        printf("T-Izdavanje potvrde ");
+        printf("T-Izdavanje potvrde  ");
         scanf("\n%c", &taster);
         if(taster=='T')izdavanje_potvrde(++broj_potvrde,ime_cvora,temp);
     }
